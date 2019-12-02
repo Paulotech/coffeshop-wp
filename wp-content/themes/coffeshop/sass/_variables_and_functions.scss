@@ -1,0 +1,29 @@
+$color-1: #FFFFFF;
+$color-2: #e8e8e8;
+$color-3: #a0796b;
+$color-4: #664735;
+$color-5: #000000;
+
+$colors: (
+    "white": $color-1, 
+    "gray": $color-2, 
+    "brown-light": $color-3, 
+    "brown": $color-4,
+    "black": $color-5,
+);
+
+@each $name, $value in $colors {        
+    .bgc-#{$name} {
+        background-color: $value !important;
+    }
+    
+    .color-#{$name} {
+        color: $value !important;
+    }
+}
+
+@mixin flex($d, $j, $a) {
+    display: $d;
+    justify-content: $j;
+    align-items: $a;
+}

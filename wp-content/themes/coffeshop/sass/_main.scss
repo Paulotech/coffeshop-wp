@@ -1,0 +1,30 @@
+#home {
+    @include flex(flex, center, flex-end);
+    position: relative;
+    height: calc(50vh + 100px);
+    width: 100%;
+    background-color: $color-2;
+}
+#sevices {
+    @include flex(flex, center, center);
+    position: relative;
+    height: 50vh;
+    width: 100%;
+}
+#about {
+    @include flex(flex, center, center);
+    position: relative;
+    height: 50vh;
+    width: 100%;
+}
+#quality {
+    @include flex(flex, center, center);
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding: 50px 0;
+    .box-video {
+        height: 600px;
+        width: 100%;
+    }
+}

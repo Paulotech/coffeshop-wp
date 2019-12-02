@@ -1,0 +1,27 @@
+.slider {
+    .content {
+        // @include flex(flex, center, center);
+        height: 100%;
+        width: 100%;
+        padding: 20px 0 0 50px;
+        a {
+            text-decoration: none;
+            color: $color-3;
+            em {
+                font-style: italic;
+            }
+            &:hover {
+                color: $color-4;
+                text-decoration: none;
+            }
+        }
+    }
+    .slider-imagem {
+        @include flex(flex, flex-start, center);
+        height: 100%;
+        width: 100%;
+        img {
+            width: 320px;
+        }
+    }
+}
