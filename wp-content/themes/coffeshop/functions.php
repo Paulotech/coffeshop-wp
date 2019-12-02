@@ -17,3 +17,4 @@ if (!function_exists('wp_render_title_tag')) {
     }
     add_action('wp_head', 'cs_render_title');
 }
+
